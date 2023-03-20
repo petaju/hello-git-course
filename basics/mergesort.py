@@ -9,12 +9,18 @@ def debug_print(debug_msg=None, **kwargs):
 
 
 def mergesort(array):
+<<<<<<< HEAD
     debug_print(array=array)
+=======
+>>>>>>> dd2979f9609ce45e6739a9e07b895342efa62956
     if len(array) <= 1:
         return array
 
     m = len(array) // 2
+<<<<<<< HEAD
     debug_print(m=m)
+=======
+>>>>>>> dd2979f9609ce45e6739a9e07b895342efa62956
 
     left = mergesort(array[:m])
     right = mergesort(array[m:])
@@ -23,8 +29,11 @@ def mergesort(array):
 
 
 def merge(left, right):
+<<<<<<< HEAD
     debug_print(debug_msg="Merging...", left=left, right=right)
 
+=======
+>>>>>>> dd2979f9609ce45e6739a9e07b895342efa62956
     merged = []
 
     while len(left) > 0 and len(right) > 0:
@@ -38,16 +47,23 @@ def merge(left, right):
     else:
         merged += right
 
+<<<<<<< HEAD
     debug_print(merged=merged)
+=======
+>>>>>>> dd2979f9609ce45e6739a9e07b895342efa62956
     return merged
 
 
 if __name__ == "__main__":
     input_str = input("Enter numbers, separated by ',': ")
+<<<<<<< HEAD
 
     input_list = input_str.split(",")
     debug_print(input_list=input_list)
 
+=======
+    input_list = input_str.split(",")
+>>>>>>> dd2979f9609ce45e6739a9e07b895342efa62956
     value_list = []
     for x in input_list:
         try:
@@ -56,7 +72,10 @@ if __name__ == "__main__":
             print("Invalid input.")
             quit(1)
 
+<<<<<<< HEAD
     debug_print(value_list=value_list)
 
+=======
+>>>>>>> dd2979f9609ce45e6739a9e07b895342efa62956
     sorted_list = mergesort(value_list)
     print(sorted_list)
